@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Compressor Online – Reduce Image Size</title>
+
+<meta name="description" content="Free online image compressor tool. Compress JPG, PNG, WebP images online without losing quality.">
+<meta name="keywords" content="image compressor, compress image online, reduce image size">
+<meta name="author" content="ImageCompressor">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <head>
+  <title>My Website</title>
+  <meta name="description" content="This is a description of my website">
+  <meta name="keywords" content="web development, HTML, CSS, JavaScript">
+  <meta name="author" content="Manish Kumar">
+</head>
+
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">📸 ImageCompressor</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Image Tools</a>
+        <a href="#">PDF Tools</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- ===== MAIN CONTAINER ===== -->
+<div class="container">
+
+    <div class="header">
+        <h1>Image Compressor Online</h1>
+        <p>Compress images without losing quality</p>
+    </div>
+
+    <div class="main">
+
+        <!-- Upload Section -->
+        <div class="upload">
+            <div class="drop-area" id="dropArea">
+                <h3>Click And Upload Image</h3>
+                <p>JPG, PNG, WebP Supported</p>
+                <input type="file" id="file" hidden accept="image/*">
+            </div>
+
+            <div class="preview">
+                <div class="box">
+                    <h4>Original</h4>
+                    <img id="originalImg">
+                    <p id="originalSize">0 KB</p>
+                </div>
+                <div class="box">
+                    <h4>Compressed</h4>
+                    <img id="compressedImg">
+                    <p id="compressedSize">0 KB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Section -->
+        <div class="controls">
+            <div class="control-box">
+                <label>Quality: <span id="qv">80%</span></label>
+                <input type="range" id="quality" min="10" max="100" value="80">
+            </div>
+
+            <button id="compressBtn">Compress Image</button>
+            <br><br>
+            <button id="downloadBtn" disabled>Download</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>© 2025 ImageCompressor.in</p>
+    <p>
+        <a href="#">Privacy</a> |
+        <a href="#">Terms</a> |
+        <a href="#">Disclaimer</a>
+    </p>
+    <p>© 2025 ImageCompressor. All rights reserved.
+
+Designed by Manish Kumar</p>
+</footer>
+
+<script src="script.js"></script>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</body>
+</html>
